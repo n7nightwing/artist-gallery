@@ -6,7 +6,12 @@
         {% for artist in artists %}
             <li>
                 <img src="{{artist.avatar}}" /> <br />
+<<<<<<< HEAD
                 <a href="{% url 'artist_detail' pk=artist.id %}">{{ artist.name }}</a>
+=======
+                <a href="{% url 'artist_detail' pk=artist.id %}">{{ artist.name }}</a><br />
+
+>>>>>>> c8c7dfcf63771c506cc7de14fc796c0ff32b4e35
             </li>
         {% endfor %}
     </ul>
