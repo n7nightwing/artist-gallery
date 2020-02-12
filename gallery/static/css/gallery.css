@@ -34,13 +34,8 @@ h1 {
 }
 
 /* list.html */
-.list-h2 {
-    /* border: black solid 2px; */
-}
-
 a:link {
     text-decoration: none;
-    background-color:;
     color: black;
     padding: 14px 25px;
     text-align: center;
