@@ -9,13 +9,20 @@
   <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
 </head>
 <body>
+  <div class="header">
 <h1>Gallery</h1><br>
     <nav>
+      <ul id="navbar">
+        <li>
         <a href="/">Home</a>
+        </li><li>
         <a href="{% url 'artist_list' %}">Artists</a>
+        </li><li>
         <a href="{% url 'creation_list' %}">Creations</a>
-        
-    </nav><br>
+        </li>
+        </ul>
+    </nav>
+    </div><br>
     {% block content %} {% endblock %}
   
 </body>
