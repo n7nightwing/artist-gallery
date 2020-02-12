@@ -1,7 +1,7 @@
 {% extends 'gallery/base.html' %} 
 {% block content %}
 
-<h2>Creations</h2>
+<h2>Creations<a href="{% url 'artist_create' %}"> (add)</a></h2>
 <ul>
   {% for creation in creations %}
   <li>
