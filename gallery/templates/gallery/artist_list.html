@@ -5,7 +5,9 @@
     <ul>
         {% for artist in artists %}
             <li>
-                <a href="{% url 'artist_detail' pk=artist.id %}">{{ artist.name }}</a>
+                <img src="{{artist.avatar}}" /> <br />
+                <a href="{% url 'artist_detail' pk=artist.id %}">{{ artist.name }}</a><br />
+
             </li>
         {% endfor %}
     </ul>

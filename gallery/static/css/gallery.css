@@ -32,3 +32,8 @@ ul#navbar li {
 h1 {
     padding-left: 1vw;
 }
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
