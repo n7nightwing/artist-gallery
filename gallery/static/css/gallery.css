@@ -1,0 +1,17 @@
+/* list.html */
+.list-h2 {
+    border: black solid 2px;
+}
+
+a:link {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: none;
+}
