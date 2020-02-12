@@ -11,7 +11,7 @@
     <ul>
         {% for creation in artist.creations.all %}
             <li>
-                <a href="{% url 'creation_detail' pk=creation.pk %}">{{ creation.title }}+' '({{ creation.year_completed }})</a>
+                <a href="{% url 'creation_detail' pk=creation.pk %}">{{ creation.title }} ({{ creation.year_completed }})</a>
             </li>
         {% endfor %}
     </ul>
