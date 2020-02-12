@@ -1,5 +1,12 @@
-{% extends 'gallery/base.html' %} {% block content %}
-<h1>New Creation</h1>
+{% extends 'gallery/base.html' %} 
+{% block content %}
+
+{% if '/new' in request.path %}
+  <h1>Add Creation</h1>
+{% elif '/edit' in request.path %}
+  <h1>Edit Creation</h1>
+{% endif %}
+
 <form method="POST" class="creation-form">
   {% csrf_token %}
   {{ form.as_p }}
