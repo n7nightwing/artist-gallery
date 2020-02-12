@@ -1,0 +1,9 @@
+{% extends 'gallery/base.html' %} {% block content %}
+
+<h2>{{ creation.title }} <a href="{% url 'creation_edit' pk=creation.pk %}">(edit)</a></h2>
+<h3>By: {{ creation.artist.name }}</h3>
+
+<div>
+  <a href="{% url 'creation_delete' pk=creation.pk %}">DELETE</a>
+</div>
+{% endblock %}
