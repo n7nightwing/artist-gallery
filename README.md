@@ -9,7 +9,7 @@ If you wish to contribute to this project, please fork and clone this repository
 
 1.) Login to psql:
 ```
-$ psql -d postgres
+psql -d postgres
 ```
 
 2.) Create a database and user:
