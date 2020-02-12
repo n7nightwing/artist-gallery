@@ -1,19 +1,29 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/gallery.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <title>Gallery</title>
 </head>
 <body>
+  <div class="header">
 <h1>Gallery</h1><br>
     <nav>
+      <ul id="navbar">
+        <li>
         <a href="/">Home</a>
+        </li><li>
         <a href="{% url 'artist_list' %}">Artists</a>
+        </li><li>
         <a href="{% url 'creation_list' %}">Creations</a>
-        
-    </nav><br>
+        </li>
+        </ul>
+    </nav>
+    </div><br>
     {% block content %} {% endblock %}
   
 </body>
-</html>
+</html> 
