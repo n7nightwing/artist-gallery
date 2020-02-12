@@ -3,9 +3,9 @@
 {% block content %}
 
 {% if '/new' in request.path %}
-<div class="shadow p-3 mb-5 bg-white rounded">Add Artist</div>
+<span class="d-block p-2 bg-primary text-white">Add Artist</span>
 {% elif '/edit' in request.path %}
-  <h1>Edit Artist</h1>
+<span class="d-block p-2 bg-primary text-white">Edit Artist</span>
 {% endif %}
 
   <form method="POST" class="artist-form">
