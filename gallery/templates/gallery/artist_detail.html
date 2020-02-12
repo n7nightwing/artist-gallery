@@ -3,7 +3,7 @@
     <h2>{{ artist.name }} <a href="{% url 'artist_edit' pk=artist.pk %}">(edit)</a></h2>
     <h4>{{ artist.year_born }} - {{ artist.year_died }}</h4>
 
-    <img src="{{ artist.avatar }}" alt="" class="artist-avatar">
+    <img src="{{ artist.avatar }}" alt="" class="photo"> <br />
 
     <h4><a href="{{ artist.bio_url }}">Bio</a></h4>
 

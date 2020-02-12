@@ -1,11 +1,12 @@
 {% extends 'gallery/base.html' %} 
 {% block content %}
 
-<h2>Creations<a href="{% url 'creation_create' %}"> (add)</a></h2>
+<h2>Creations<a href="{% url 'creation_create' %}"> || add creation</a></h2>
 <ul>
   {% for creation in creations %}
   <li>
-    <a href="{% url 'creation_detail' pk=creation.pk %}">{{ creation.title }}</a>
+    <img src="{{ creation.image }}" alt="" class="photo"><br />
+    <a href="{% url 'creation_detail' pk=creation.pk %}">{{ creation.title }}</a><br /> <hr/>
   </li>
   {% endfor %}
 </ul>
