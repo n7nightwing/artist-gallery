@@ -1,16 +1,17 @@
 {% extends 'gallery/base.html' %} 
+{% load crispy_forms_tags %}
 {% block content %}
 
 {% if '/new' in request.path %}
-  <h1>Add Artist</h1>
+<div class="shadow p-3 mb-5 bg-white rounded">Add Artist</div>
 {% elif '/edit' in request.path %}
   <h1>Edit Artist</h1>
 {% endif %}
 
   <form method="POST" class="artist-form">
     {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="save btn btn-default">Save</button>
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-success">Save</button>
   </form>
   
 {% endblock %}

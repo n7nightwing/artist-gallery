@@ -1,3 +1,4 @@
+# from django.views.generic import CreateView
 from django import forms
 from .models import Artist, Creation
 
@@ -9,7 +10,7 @@ class ArtistForm(forms.ModelForm):
 
 
 class CreationForm(forms.ModelForm):
-    
+#class CreationForm(CreateView): 
     class Meta:
         model = Creation
         fields = ('artist', 'title', 'year_completed', 'medium', 'image', 'artist',)

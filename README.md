@@ -23,6 +23,11 @@ GRANT ALL PRIVILEGES ON DATABASE gallery TO galleryuser;
 ```
 pip install django psycopg2-binary django-extensions
 ```
+.) Bootsrap 4 dependencies
+```
+pip install django-crispy-forms
+
+```
 
 4.) Create a virtual environment:
 ```
@@ -42,3 +47,6 @@ python manage.py makemigrations
 ```
 python manage.py migrate
 ```
+7.) Bootstrap documentation
+    -https://simpleisbetterthancomplex.com/tutorial/2018/08/13/how-to-use-bootstrap-4-forms-with-django.html
+    
